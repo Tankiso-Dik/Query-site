@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Product Randomizer</h1>
+        <p>Click the button below to get a random product with platform links</p>
+        
+        <button id="randomBtn" class="btn-primary">Get Random Product</button>
+        <a href="admin.html" class="btn-secondary admin-link">Go to Admin Panel</a>
+        
+        <div id="result" class="result-container" style="display: none;">
+            <h2>📦 Selected Product</h2>
+            <div class="product-card">
+                <h3 id="productName"></h3>
+                <p id="productOfficial"></p>
+                <img id="productThumbnail" src="" alt="Product Thumbnail" class="product-thumbnail" style="display: none;">
+                <p id="productDescription" class="product-description"></p>
+                <div class="product-instructions">
+                    <h4>📝 Instructions</h4>
+                    <p id="productInstructions"></p>
+                </div>
+                <div class="product-images">
+                    <h4>🖼️ Preview Images</h4>
+                    <div id="previewImagesDisplay" class="image-gallery"></div>
+                </div>
+                <div class="product-screenshots">
+                    <h4>📸 Screenshots</h4>
+                    <div id="screenshotsDisplay" class="image-gallery"></div>
+                </div>
+                
+                <div class="video-links">
+                    <h4>🎥 Video Links</h4>
+                    <p><strong>Google Drive:</strong> <a id="driveLink" href="#" target="_blank">Watch Video</a></p>
+                    <p><strong>YouTube:</strong> <a id="youtubeLink" href="#" target="_blank">Watch Video</a></p>
+                </div>
+                
+                <div class="platform-link">
+                    <h4>🔗 Selected Platform</h4>
+                    <p><strong id="platformName"></strong></p>
+                    <a id="platformUrl" href="#" target="_blank" class="btn-secondary">Visit Product</a>
+                </div>
+                
+                <div class="json-output">
+                    <h4>📋 JSON Output</h4>
+                    <textarea id="jsonOutput" readonly></textarea>
+                    <button id="copyBtn" class="btn-copy">Copy JSON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
