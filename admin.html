@@ -24,12 +24,26 @@
                     <input type="text" id="officialName" required>
                 </div>
                 <div class="form-group">
-                    <label for="imagePolished">Image URL:</label>
-                    <input type="text" id="imagePolished">
+                    <label for="description">Description:</label>
+                    <textarea id="description"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="videoUrl">Video URL:</label>
-                    <input type="text" id="videoUrl">
+                    <label>Features:</label>
+                    <div id="featuresContainer" class="dynamic-input-container">
+                        <!-- Dynamic inputs will be added here -->
+                    </div>
+                    <button type="button" class="btn-secondary add-btn" data-target="featuresContainer" data-type="simple">+ Add Feature</button>
+                </div>
+                <div class="form-group">
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Image URLs & Alt Text:</label>
+                    <div id="imagePolishedContainer" class="dynamic-input-container">
+                        <!-- Dynamic inputs will be added here -->
+                    </div>
+                    <button type="button" class="btn-secondary add-btn" data-target="imagePolishedContainer" data-type="image">+ Add Image</button>
                 </div>
                 <div class="form-group">
                     <label for="googleDriveVideoUrl">Google Drive Video URL:</label>
@@ -44,49 +58,30 @@
                     <input type="text" id="gumroadUrl">
                 </div>
                 <div class="form-group">
-                    <label for="etsyUrl">Etsy URL:</label>
-                    <input type="text" id="etsyUrl">
-                </div>
-                <div class="form-group">
                     <label for="creativeMarketUrl">Creative Market URL:</label>
                     <input type="text" id="creativeMarketUrl">
+                </div>
+                <div class="form-group">
+                    <label for="etsyUrl">Etsy URL:</label>
+                    <input type="text" id="etsyUrl">
                 </div>
                 <div class="form-group">
                     <label for="payhipUrl">Payhip URL:</label>
                     <input type="text" id="payhipUrl">
                 </div>
                 <div class="form-group">
-                    <label>Features:</label>
-                    <div id="featuresContainer" class="dynamic-input-container">
+                    <label>Tags:</label>
+                    <div id="tagsContainer" class="dynamic-input-container">
                         <!-- Dynamic inputs will be added here -->
                     </div>
-                    <button type="button" class="btn-secondary add-url-btn" data-target="featuresContainer">+ Add Feature</button>
+                    <button type="button" class="btn-secondary add-btn" data-target="tagsContainer" data-type="simple">+ Add Tag</button>
                 </div>
                 <div class="form-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="instructions">Instructions:</label>
-                    <textarea id="instructions"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="thumbnail">Thumbnail URL:</label>
-                    <input type="text" id="thumbnail">
-                </div>
-                <div class="form-group">
-                    <label>Preview Images:</label>
-                    <div id="previewImagesContainer" class="dynamic-input-container">
+                    <label>Categories:</label>
+                    <div id="categoriesContainer" class="dynamic-input-container">
                         <!-- Dynamic inputs will be added here -->
                     </div>
-                    <button type="button" class="btn-secondary add-url-btn" data-target="previewImagesContainer">+ Add Preview Image URL</button>
-                </div>
-                <div class="form-group">
-                    <label>Screenshots:</label>
-                    <div id="screenshotsContainer" class="dynamic-input-container">
-                        <!-- Dynamic inputs will be added here -->
-                    </div>
-                    <button type="button" class="btn-secondary add-url-btn" data-target="screenshotsContainer">+ Add Screenshot URL</button>
+                    <button type="button" class="btn-secondary add-btn" data-target="categoriesContainer" data-type="simple">+ Add Category</button>
                 </div>
                 <button type="submit" class="btn-primary">Save Product</button>
                 <button type="button" id="clearFormBtn" class="btn-secondary">Clear Form</button>

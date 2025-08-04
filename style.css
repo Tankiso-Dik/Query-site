@@ -294,3 +294,24 @@ p {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+
+#status-indicator-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.status-online {
+    background-color: #2ecc71; /* green */
+}
+
+.status-offline {
+    background-color: #e74c3c; /* red */
+}

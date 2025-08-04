@@ -1,93 +1,109 @@
 [
   {
-    "listingName": "Goal Tracker PLR",
-    "officialName": "Notion Goal Management System (White Label Edition)",
+    "listingName": "Ultimate Notion Template Bundle",
+    "officialName": "The All-in-One Notion Productivity System",
+    "description": "A comprehensive bundle of Notion templates designed to organize your life, from daily tasks to long-term goals. Includes project management, habit tracking, journaling, and more.",
+    "features": [
+      "Integrated Goal & Project Management",
+      "Automated Habit Tracker",
+      "Second Brain for Knowledge Management",
+      "Finance & Subscription Tracker",
+      "Fully customizable and easy to use"
+    ],
+    "instructions": "1. Duplicate the template into your Notion workspace. 2. Follow the setup guide in the 'Start Here' page. 3. Customize the dashboards to fit your workflow.",
     "imagePolished": [
-      "https://example.com/images/goal-tracker-banner.jpg"
+      "https://example.com/images/bundle-cover.png",
+      "https://example.com/images/dashboard-view.png",
+      "https://example.com/images/project-tracker.png"
     ],
-    "googleDriveVideo": "https://drive.google.com/file/d/example/view",
-    "youtubeVideo": "https://youtube.com/watch?v=xyz",
-    "gumroadUrl": "https://gumroad.com/l/goal-tracker",
-    "etsyUrl": "https://etsy.com/listing/goal-tracker",
+    "altText": [
+      "Cover image of the Ultimate Notion Template Bundle",
+      "A screenshot of the main dashboard view in Notion",
+      "A close-up of the project tracker in Notion"
+    ],
+    "googleDriveVideoUrl": "https://drive.google.com/file/d/example1/view",
+    "youtubeVideoUrl": "https://youtube.com/watch?v=example1",
+    "gumroadUrl": "https://user.gumroad.com/l/notion-bundle",
     "creativeMarketUrl": "",
+    "etsyUrl": "https://www.etsy.com/listing/12345/notion-template-bundle",
     "payhipUrl": "",
-    "features": [
-      "Track goals by category",
-      "Auto-progress with tasks",
-      "Beautiful dashboard UI"
-    ]
+    "tags": [
+      "notion",
+      "productivity",
+      "template",
+      "gtd",
+      "organization"
+    ],
+    "categories": [
+      "Productivity",
+      "Digital Products"
+    ],
+    "id": "1754239999999"
   },
   {
-    "listingName": "left eye",
-    "officialName": "fond",
-    "imagePolished": "fhvfytg",
-    "videoUrl": "dgvedgt",
-    "googleDriveVideoUrl": "degvde",
-    "youtubeVideoUrl": "edhvd",
-    "gumroadUrl": "edbg vdeg",
-    "etsyUrl": "eh d",
-    "creativeMarketUrl": "edhyey",
-    "payhipUrl": "edhveuv",
+    "listingName": "Nato",
+    "officialName": "r4ugr4",
+    "description": "rfuigf3",
     "features": [
-      "hdvyrd",
-      "dyvdeyt"
+      "fuigyf",
+      "fuogfr"
     ],
-    "id": "1754235339615"
+    "instructions": "fyg8fr8gr4c",
+    "imagePolished": [
+      "fiufgriyugf.jpg",
+      "fyfrguyc.jpg"
+    ],
+    "altText": [
+      "4fe8ygf4eoyfde",
+      "r3y8gd2q"
+    ],
+    "googleDriveVideoUrl": "f42iyhvf24",
+    "youtubeVideoUrl": "f42hibvq2f",
+    "gumroadUrl": "2f4ihv2fq",
+    "creativeMarketUrl": "2fiu2qiy",
+    "etsyUrl": "2f8yof2q",
+    "payhipUrl": "2qy8v2q",
+    "tags": [
+      "28yof2t7o",
+      "2y8vf2",
+      "2y8p2fq"
+    ],
+    "categories": [
+      "f4q28yt7f2q",
+      "2qyg2",
+      "2dyg82q"
+    ],
+    "id": "1754331633935"
   },
   {
-    "listingName": "dgdtfs",
-    "officialName": "dyhvex",
-    "imagePolished": "xeyhbx",
-    "videoUrl": "xehxeug",
-    "googleDriveVideoUrl": "xehvxe",
-    "youtubeVideoUrl": "bycy8vc",
-    "gumroadUrl": "hibcyhv",
-    "etsyUrl": "ihbcihy",
-    "creativeMarketUrl": "icybc4iy8",
-    "payhipUrl": "cy8vbc4yh",
+    "listingName": "New Product",
+    "officialName": "New Product Official Name",
+    "description": "Description of new product",
     "features": [
-      "cbyc4",
-      "yu8d48y4hi"
+      "feature 1",
+      "feature 2"
     ],
-    "description": "4cubyc4b4ci8",
-    "instructions": "c4iub4cih",
-    "thumbnail": "ihb4c9ubc4",
-    "previewImages": [
-      "4cub4",
-      "g84yv"
+    "instructions": "instructions for new product",
+    "imagePolished": [
+      "new_product.jpg"
     ],
-    "screenshots": [
-      "yvrhyv",
-      "dy8b4d8y"
+    "altText": [
+      "alt text for new product"
     ],
-    "id": "1754236388910"
-  },
-  {
-    "listingName": "Baba Yaga",
-    "officialName": "f4uvf4",
-    "imagePolished": "f4g f4",
-    "videoUrl": "4fuvgf4",
-    "googleDriveVideoUrl": "f4guvf4",
-    "youtubeVideoUrl": "d4vgu4f",
-    "gumroadUrl": "d4eu v4ce",
-    "etsyUrl": "4edve4de4ugv",
-    "creativeMarketUrl": "dyhve4cgv",
-    "payhipUrl": "dybvd4g",
-    "features": [
-      "duv4cgv",
-      "ydy7tvd"
+    "googleDriveVideoUrl": "new_product_google_drive",
+    "youtubeVideoUrl": "new_product_youtube",
+    "gumroadUrl": "new_product_gumroad",
+    "creativeMarketUrl": "new_product_creative_market",
+    "etsyUrl": "new_product_etsy",
+    "payhipUrl": "new_product_payhip",
+    "tags": [
+      "new",
+      "product"
     ],
-    "description": "dxeg ecd",
-    "instructions": "dg vdg ",
-    "thumbnail": "dgv dg ",
-    "previewImages": [
-      "dyhbd",
-      "dugvdu"
+    "categories": [
+      "new",
+      "product"
     ],
-    "screenshots": [
-      "dugxvdugv",
-      "d3ugd"
-    ],
-    "id": "1754236688187"
+    "id": "1754331633936"
   }
 ]

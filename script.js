@@ -1,33 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const randomBtn = document.getElementById('randomBtn');
     const resultContainer = document.getElementById('result');
-    const productName = document.getElementById('productName');
-    const productOfficial = document.getElementById('productOfficial');
-    const productThumbnail = document.getElementById('productThumbnail');
-    const productDescription = document.getElementById('productDescription');
-    const productInstructions = document.getElementById('productInstructions');
-    const previewImagesDisplay = document.getElementById('previewImagesDisplay');
-    const screenshotsDisplay = document.getElementById('screenshotsDisplay');
-    const driveLink = document.getElementById('driveLink');
-    const youtubeLink = document.getElementById('youtubeLink');
-    const platformName = document.getElementById('platformName');
-    const platformUrl = document.getElementById('platformUrl');
     const jsonOutput = document.getElementById('jsonOutput');
     const copyBtn = document.getElementById('copyBtn');
+    const statusIndicator = document.getElementById('status-indicator');
 
-    // Helper function to display images
-    function displayImages(container, imageUrls) {
-        container.innerHTML = ''; // Clear previous images
-        if (imageUrls && imageUrls.length > 0) {
-            imageUrls.forEach(url => {
-                if (url.trim() !== '') {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.alt = 'Product Image';
-                    img.classList.add('product-image-gallery');
-                    container.appendChild(img);
-                }
-            });
+    async function checkBackendStatus() {
+        try {
+            const response = await fetch('/status');
+            if (response.ok) {
+                statusIndicator.classList.remove('status-offline');
+                statusIndicator.classList.add('status-online');
+            } else {
+                statusIndicator.classList.remove('status-online');
+                statusIndicator.classList.add('status-offline');
+            }
+        } catch (error) {
+            statusIndicator.classList.remove('status-online');
+            statusIndicator.classList.add('status-offline');
         }
     }
 
@@ -43,32 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert(data.error);
                 return;
             }
-            
-            // Display product info
-            productName.textContent = data.listingName;
-            productOfficial.textContent = data.officialName;
-            productDescription.textContent = data.description || '';
-            productInstructions.textContent = data.instructions || '';
-
-            // Display thumbnail
-            if (data.thumbnail) {
-                productThumbnail.src = data.thumbnail;
-                productThumbnail.style.display = 'block';
-            } else {
-                productThumbnail.style.display = 'none';
-            }
-
-            // Display preview images and screenshots
-            displayImages(previewImagesDisplay, data.previewImages);
-            displayImages(screenshotsDisplay, data.screenshots);
-            
-            // Set video links
-            driveLink.href = data.googleDriveVideoUrl;
-            youtubeLink.href = data.youtubeVideoUrl;
-            
-            // Set platform info
-            platformName.textContent = data.selectedPlatform.charAt(0).toUpperCase() + data.selectedPlatform.slice(1);
-            platformUrl.href = data.selectedUrl;
             
             // Display JSON
             jsonOutput.value = JSON.stringify(data, null, 2);
@@ -95,4 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             copyBtn.textContent = originalText;
         }, 2000);
     });
+
+    checkBackendStatus();
 });
