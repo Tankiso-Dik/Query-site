@@ -1,36 +1,31 @@
 # Product Randomizer
 
-Random product selector with admin panel
+A simple Node.js script that selects a random product JSON from the `products/` directory and outputs details to the terminal. The platform is chosen at random from `platforms.json`, and only products matching the selected platform are considered.
 
-## Installation
+## Setup
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd html-site
-   ```
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
+1. Ensure you have [Node.js](https://nodejs.org/) installed.
+2. Add your product JSON files to the `products/` directory.
+3. List available platforms in `platforms.json`.
 
-## Running the Application
+## Running
 
-To start the server, run the following command:
+Execute the script from the project root:
 
 ```bash
-npm start
+node randomize.js
 ```
 
-This will start the server using `node server.js`.
+The script prints the selected product and its information. It does not create or modify any files.
 
-## Development
+## Product Schema
 
-For development, you can use `nodemon` to automatically restart the server on file changes:
+Each product file must contain:
 
-```bash
-npm run dev
-```
+- `listingName` (string)
+- `officialName` (string)
+- `imagePolished` (non-empty array of strings)
+- `selectedPlatform` (string)
+- `selectedUrl` (string)
+
+Files missing these fields or containing invalid JSON are skipped with a warning.
